@@ -84,5 +84,9 @@
           .footer-item {
               width: 100%; /* Full width on smaller screens */
               text-align: center; /* Center text */
+              margin: 5px 0;
           }
       }
+      * {
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
