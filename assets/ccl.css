@@ -1,0 +1,78 @@
+.navbar.navbar-light.bg-light {
+    background-color: #044db6!important; /* Change the background color to blue */
+    color: white;
+  }
+
+ .customnavbar{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+ }
+ 
+ .container-sobre{
+   background-color: white;
+   color: black;
+   margin-top: -3%;
+   padding-top: 5%;
+   text-align: center;
+ }
+ .btn-outline-light img {
+   filter: invert(1); /* invert the color to white */
+   
+ }
+ .btn-outline-light:hover img {
+   filter: invert(0); /* revert to original color (black) on hover */
+ }
+
+ .redd{
+  color: #e21526;
+ }
+
+ .kdot{
+  filter: invert(1);
+ }
+
+ .cinquenta{
+  width: 30%;
+  padding-bottom: 0 5%;
+ }
+ @media (max-width: 768px) {
+  .cinquenta {
+      width: 100%; /* 100% em telas pequenas */
+      margin: 10px 0; /* Margem vertical */
+  }
+}
+
+ .alinhar{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: space-between;
+ }
+
+ .logo {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .alinhar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .logo {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+}
+ .centralizer{
+   display: flex;
+   justify-content: center;
+ }
+
+ .centralizerr{
+      display: grid;
+      place-items: center;
+ }
