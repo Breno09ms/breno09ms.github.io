@@ -90,3 +90,10 @@
       * {
         box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
+    .linha {
+      width: 50%;           /* Largura total */
+      height: 3px;           /* Espessura da linha */
+      background-color: #000; /* Cor da linha */
+      margin: 20px auto;        /* Espaçamento em cima e embaixo */
+    }
+    
