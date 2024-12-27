@@ -97,10 +97,23 @@
       margin: 20px auto;        /* Espaçamento em cima e embaixo */
     }
     
-/* Impede inversão de cores no modo escuro */
+/* Impede qualquer filtro de inversão de cores, independentemente do modo */
+html, body {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Estilos para o modo claro (fundo branco, texto preto) */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para o modo escuro (fundo escuro, texto claro) */
 @media (prefers-color-scheme: dark) {
-  html {
-    filter: none !important;
+  body {
+    background-color: #121212;  /* Fundo escuro */
+    color: #e0e0e0;             /* Texto claro */
   }
 }
 
