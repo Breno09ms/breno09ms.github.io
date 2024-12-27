@@ -97,23 +97,12 @@
       margin: 20px auto;        /* Espaçamento em cima e embaixo */
     }
     
-/* Impede qualquer filtro de inversão de cores, independentemente do modo */
-html, body {
-  filter: none !important;
-  -webkit-filter: none !important;
-}
-
-/* Estilos para o modo claro (fundo branco, texto preto) */
-body {
-  background-color: white;
-  color: black;
-}
-
-/* Estilos para o modo escuro (fundo escuro, texto claro) */
+/* Custom styles to override Bootstrap dark mode */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;  /* Fundo escuro */
-    color: #e0e0e0;             /* Texto claro */
-  }
-}
+    body {
+        background-color: white !important; /* or your desired light background */
+        color: black !important; /* or your desired light text color */
+    }
 
+    /* Add more overrides as needed for other elements */
+}
