@@ -97,4 +97,10 @@
       margin: 20px auto;        /* Espaçamento em cima e embaixo */
     }
     
+/* Impede inversão de cores no modo escuro */
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: none !important;
+  }
+}
 
