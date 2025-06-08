@@ -106,3 +106,17 @@
 
     /* Add more overrides as needed for other elements */
 }
+.meu-carrossel {
+  height: 300px; /* Altura padrão para desktop */
+}
+.meu-carrossel .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Aumenta a altura do carrossel em celulares */
+@media (max-width: 767.98px) {
+  .meu-carrossel {
+    height: 500px; /* Altura maior para celular */
+  }
+}
