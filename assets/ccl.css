@@ -105,37 +105,15 @@
     }
 
     /* Add more overrides as needed for other elements */
-}
-.meu-carrossel {
-  height: 300px; /* Altura padrão para desktop */
-}
-.meu-carrossel .carousel-item img {
-  height: 100%;
-  object-fit: cover;
-}
 
-/* Aumenta a altura do carrossel em celulares */
-@media (max-width: 767.98px) {
-  .meu-carrossel {
-    height: 500px; /* Altura maior para celular */
-  }
-}
-/* Altura padrão do carrossel (desktop) */
-.meu-carrossel,
-.meu-carrossel .carousel-inner,
-.meu-carrossel .carousel-item,
-.meu-carrossel .carousel-item img {
-  height: 300px;
-  object-fit: cover;
-}
 
-/* Altura maior no celular */
-@media (max-width: 767.98px) {
-  .meu-carrossel,
-  .meu-carrossel .carousel-inner,
-  .meu-carrossel .carousel-item,
-  .meu-carrossel .carousel-item img {
-    height: 500px;
   }
+/* Aplica altura de 60% da tela em qualquer dispositivo */
+#carouselExampleCaptions,
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item,
+#carouselExampleCaptions .carousel-item img {
+  height: 45vh !important; /* ocupa 60% da altura da tela */
+  object-fit: cover !important; /* imagem cobre o espaço sem distorcer */
 }
 
