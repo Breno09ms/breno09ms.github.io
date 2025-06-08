@@ -120,3 +120,22 @@
     height: 500px; /* Altura maior para celular */
   }
 }
+/* Altura padrão do carrossel (desktop) */
+.meu-carrossel,
+.meu-carrossel .carousel-inner,
+.meu-carrossel .carousel-item,
+.meu-carrossel .carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Altura maior no celular */
+@media (max-width: 767.98px) {
+  .meu-carrossel,
+  .meu-carrossel .carousel-inner,
+  .meu-carrossel .carousel-item,
+  .meu-carrossel .carousel-item img {
+    height: 500px;
+  }
+}
+
